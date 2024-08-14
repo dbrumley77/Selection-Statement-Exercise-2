@@ -9,7 +9,10 @@
             //Console.WriteLine();
             //Exercise3();
             //Console.WriteLine();
-            Exercise4();
+            //Exercise4();
+            //Console.WriteLine();
+            //Exercise5(0);
+              Exercise6(0);
         
                     
             
@@ -19,30 +22,35 @@
         public static void Excercise1()
         {
 
-
-            int favNumber = 260;
-            Console.WriteLine("Please guess my favorite number between 1 and 1000: ");
-            int userGuess = int.Parse(Console.ReadLine());
-
-            if (userGuess < favNumber)
-
-            {
-                Console.WriteLine("To Low");
-            }
-
-            else if (userGuess > favNumber)
-
-            {
-                Console.WriteLine("To High");
-            }
-
-            else
-
-            {
-                Console.WriteLine("Just Right!");
-            }
+            
 
 
+                int favNumber = 5;
+                Console.WriteLine("Please guess my favorite number between 1 and 10: ");
+                string userGuess = Console.ReadLine();
+                int parsedUserGuess = int.Parse(userGuess);
+
+
+                if (parsedUserGuess < favNumber)
+
+                {
+                    Console.WriteLine("To Low");
+                }
+
+                else if (parsedUserGuess > favNumber)
+
+                {
+                    Console.WriteLine("To High");
+                }
+
+                else
+
+                {
+                    Console.WriteLine("Just Right!");
+                }
+            
+                    
+            
         }
 
 
@@ -115,7 +123,7 @@
                 case "seinfield":
                     Console.WriteLine("Pretty funny guy");
                     break;
-                case "WINGS":
+                case "wings":
                     Console.WriteLine("Roy Biggins is the best");
                     break;
                 case "espn":
@@ -128,6 +136,55 @@
             }
         }
 
+        public static int Exercise5(int number)
+        {
+            int i = 0;
+            int count;
+            do
+            {
+                Console.WriteLine(i);
+                count = i++;
+
+
+            }
+            while (i <= 14);
+            Console.WriteLine(i);
+            return count;
+           
+        }
+
+
+        public static double Exercise6(double balance)
+        {
+            
+            bool condition;
+            do
+            {
+                Console.WriteLine("How much would you like to deposit?");
+                string number = Console.ReadLine();
+                double attemptedAnswer;
+
+                if (double.TryParse(number, out attemptedAnswer))
+                {
+                    balance += attemptedAnswer;
+                }
+
+                Console.WriteLine("Would you like to make another deposit? Yes or No");
+                string answer = Console.ReadLine().ToLower();
+                if (answer == "yes")
+                {
+                    condition = true;
+                }
+                else
+                {
+                    condition = false;
+                }
+
+            } while (condition);
+            Console.WriteLine($"Your current balance is {balance.ToString("C")}");
+            return balance;
+            
+        }
     }
 
 

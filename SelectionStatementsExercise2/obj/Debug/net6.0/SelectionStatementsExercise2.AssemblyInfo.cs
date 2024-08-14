@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SelectionStatementsExercise2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a4cb280c2169c0b869e35f65d7a60a5e810d126")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c48c079647577bce316a345e7c43a056d7125aef")]
 [assembly: System.Reflection.AssemblyProductAttribute("SelectionStatementsExercise2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SelectionStatementsExercise2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
